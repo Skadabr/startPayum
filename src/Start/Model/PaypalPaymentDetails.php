@@ -14,8 +14,4 @@ class PaypalPaymentDetails extends BasePaymentDetails
 {
     protected $id;
 
-    public function getId()
-    {
-        return $this->id;
-    }
 }

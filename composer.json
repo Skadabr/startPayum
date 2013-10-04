@@ -11,7 +11,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/Payum/PaypalRest"
+            "url": "https://github.com/Payum/PaypalRest.git"
         }
     ],
 
