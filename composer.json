@@ -5,14 +5,24 @@
         "kriswallsmith/buzz": "*",
         "payum/payum": "0.6.x-dev",
         "paypal/rest-api-sdk-php" : "0.5.*"
+
     },
+
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Payum/PaypalRest"
+        }
+    ],
+
     "require-dev": {
         "doctrine/orm": "2.2.*",
         "phpunit/phpunit": "3.7.*",
         "fp/testo": "dev-master",
         "ext-curl": "*",
         "ext-pdo_sqlite": "*",
-        "payum/paypal-express-checkout-nvp": "0.6.x-dev"
+        "payum/paypal-express-checkout-nvp": "0.6.x-dev",
+        "payum/paypal-rest" : "dev-master"
     },
 
     "autoload": {
