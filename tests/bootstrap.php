@@ -14,6 +14,4 @@ EOM;
     exit(1);
 }
 
-$loader->add('Payum\Paypal\ExpressCheckout\Nvp\Tests', __DIR__);
-$loader->add('Payum\Paypal\ExpressCheckout\Nvp\Examples', __DIR__.'/../examples');
-$loader->add('Payum\Tests', __DIR__.'/../vendor/payum/payum/tests');
+$loader->add('Payum\Paypal\Rest\Tests', realpath(__DIR__ .'/../vendor/payum/paypal-rest/tests'));

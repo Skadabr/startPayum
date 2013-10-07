@@ -1,5 +1,4 @@
 <?php
-//config.php
 
 require '../../vendor/autoload.php';
 
@@ -29,7 +28,6 @@ $storages = array(
     )
 );
 
-
 define("PP_CONFIG_PATH", __DIR__);
 
 $configManager = \PPConfigManager::getInstance();
@@ -37,7 +35,6 @@ $configManager = \PPConfigManager::getInstance();
 $cred = new OAuthTokenCredential(
     $configManager->get('acct1.ClientId'),
     $configManager->get('acct1.ClientSecret'));
-
 
 $payments = array(
     'paypal' => PaymentFactory::create(new Api(new Curl, array(
@@ -48,7 +45,6 @@ $payments = array(
         )
     )),
     'paypalRest' => RestPaymentFactory::create(new ApiContext($cred, 'Request' . time()))
-
 );
 
 $payments['paypal']->addExtension(new StorageExtension($storages['paypal'][$paypalPaymentDetailsClass]));
