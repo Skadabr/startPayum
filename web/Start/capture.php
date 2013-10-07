@@ -1,6 +1,5 @@
 <?php
 
-
 use Payum\Request\BinaryMaskStatusRequest;
 use Payum\Request\SecuredCaptureRequest;
 use Payum\Request\RedirectUrlInteractiveRequest;
