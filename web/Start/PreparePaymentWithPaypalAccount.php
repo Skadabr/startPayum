@@ -1,5 +1,7 @@
 <?php
 
+//Prepare Payment with PayPal account use REST api
+
 include '../../src/Start/config.php';
 
 use PayPal\Api\Amount;

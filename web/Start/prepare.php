@@ -1,5 +1,7 @@
 <?php
 
+//Prepare Payment with PayPal account use ExpressCheckoutNvp
+
 include '../../src/Start/config.php';
 
 $storage = $registry->getStorageForClass($paypalPaymentDetailsClass, 'paypal');

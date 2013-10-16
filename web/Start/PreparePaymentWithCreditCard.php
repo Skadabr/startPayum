@@ -1,5 +1,7 @@
 <?php
 
+//Prepare Payment with creditCard use REST api
+
 include '../../src/Start/config.php';
 
 use PayPal\Api\Address;
